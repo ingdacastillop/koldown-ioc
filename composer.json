@@ -6,6 +6,7 @@
         "name"  : "Daniel Andres Castillo Pedroza",
         "email" : "ing.dacastillop@gmail.com"
     }],
+    "minimum-stability" : "dev",
     "require" : {
         "php" : ">=7.1.1"
     },

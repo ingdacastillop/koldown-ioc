@@ -148,7 +148,7 @@ class ContainerContext {
     }
 
     /**
-     * Retorna la instancia de la clase ApplicationContext
+     * Retorna la instancia de la clase ContainerContext
      * 
      * @return ContainerContext Patrón singleton
      */
