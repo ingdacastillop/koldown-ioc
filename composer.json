@@ -1,16 +1,16 @@
 {
-    "name"        : "koldown/ioc",
-    "description" : "Librería que permite aplicar el principio de diseño de software de control de inversión",
-    "license"     : "MIT",
-    "authors"     : [{
-        "name"  : "Daniel Andres Castillo Pedroza",
-        "email" : "ing.dacastillop@gmail.com"
+    "name": "koldown/ioc",
+    "description": "Librería que permite aplicar el principio de diseño de software de control de inversión",
+    "license": "MIT",
+    "authors": [{
+        "name": "Daniel Andres Castillo Pedroza",
+        "email": "ing.dacastillop@gmail.com"
     }],
-    "minimum-stability" : "dev",
-    "require" : {},
-    "autoload" : {
-        "psr-4" : {
-            "Koldown\\InversionControl\\" : "src/"
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Koldown\\InversionControl\\": "src/"
         }
     }
 }
