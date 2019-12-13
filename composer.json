@@ -7,9 +7,7 @@
         "email" : "ing.dacastillop@gmail.com"
     }],
     "minimum-stability" : "dev",
-    "require" : {
-        "php" : ">=7.1.1"
-    },
+    "require" : {},
     "autoload" : {
         "psr-4" : {
             "Koldown\\InversionControl\\" : "src/"
