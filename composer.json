@@ -1,6 +1,6 @@
 {
     "name": "koldown/ioc",
-    "description": "Librería que permite aplicar el principio de diseño de software de control de inversión",
+    "description": "Librería que proporciona un conjunto de clase para implementar los principios de inversión de control (IoC)",
     "license": "MIT",
     "authors": [{
         "name": "Daniel Andres Castillo Pedroza",
