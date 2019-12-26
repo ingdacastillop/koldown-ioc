@@ -55,7 +55,8 @@ Se debe establer nombre de clave de la dependencia y el tipo de clase a instanci
 se basa en los principios de inyección de dependencias usando métodos tipo `setter`, por lo tanto en el ejemplo donde definimos que la clave es "operacion", a la hora de construir el 
 objeto se buscará la función "setOperacion" para inyectarle la respectiva dependencia. 
 
-Una vez definido nuestra fábrica de objetos, procedemos aplicar el proceso de IoC en concreto:
+Una vez definido nuestra fábrica de objetos, procedemos aplicar el proceso de IoC en concreto, para esto nos apoyamos en la clase `\Koldown\InversionControl\ContainerContext` que es la
+encargada de gestionar la construcción de los objetos de clases solicitados:
 
     $context  = \Koldown\InversionControl\ContainerContext::getInstance();
     $sumador  = $context->create(Factory::class, Sumador::class);
@@ -104,7 +105,12 @@ De tal manera que ya podemos ejecutar nuestro programa de la siguiente manera:
 
     $calculadora = $context->create(Factory::class, Calculadora::class);
 
-    echo "Cálculo suma (4 + 8)  = {$calculadora->sumar(4, 8)}<br>";
+    echo "Cálculo suma (4 + 8)  = {$calculadora->sumar(4, 8)}";
     echo "Cálculo resta (9 - 2) = {$calculadora->restar(9, 2)}";
 
 Si desea ver en detalles el código de este ejercicio entre a la carpeta `example` del repositorio y encontrará los ficheros del ejemplo.
+
+## Notas
+
+La función `setDependence` de la clase `Koldown\InversionControl\ClassInstance` recibe un tercer parámetro `$shared` de tipo `bool`, lo cual permite establecer que la instancia de la dependencia construida será 
+compartida entre las clases que la soliciten durante la ejecución de creación de objetos desde el `\Koldown\InversionControl\ContainerContext`.
